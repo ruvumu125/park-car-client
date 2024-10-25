@@ -23,6 +23,9 @@ jobs:
           ssh -o StrictHostKeyChecking=no deployer-landry@${{ secrets.VPS_HOST }} << 'EOF'
             # Navigate to your application directory
             cd /var/www/my-apps/parika-app-client
+
+            # Pull the latest code
+            git pull origin master
             
            
           EOF
