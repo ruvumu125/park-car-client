@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {AuthProvider} from "./components/auth/AuthContext";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import PaymentCard from "./pages/PaymentCard";
+import Login from "./pages/Login";
+import RequireAuth from "./components/auth/RequireAuth";
+import MainPage from "./components/MainPage";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+      <AuthProvider>
+        <React.Fragment>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/paul" element={<PaymentCard />} />
+              <Route path="/" element={<Login />} />
+              <Route path="*" element={
+                <RequireAuth>
+                  <MainPage />
+                </RequireAuth>
+              } />
+            </Routes>
+          </BrowserRouter>
+        </React.Fragment>
+      </AuthProvider>
   );
+
 }
 
 export default App;
