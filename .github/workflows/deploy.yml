@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to VPS
         run: |
-          ssh -o StrictHostKeyChecking=no deployer@${{ secrets.VPS_HOST }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no deployer-landry@${{ secrets.VPS_HOST }} << 'EOF'
             # Navigate to your application directory
             cd /var/www/my-apps/parika-app-client
             
