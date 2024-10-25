@@ -1,5 +1,5 @@
 {
-  "name": "park-car",
+  "name": "parika-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,8 +7,8 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.115",
-    "@types/react": "^18.3.12",
+    "@types/node": "^16.18.114",
+    "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
@@ -52,11 +52,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/core": "^7.25.9",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.15",
-    "babel-loader": "^9.2.1",
-    "react-refresh": "^0.14.2"
   }
 }

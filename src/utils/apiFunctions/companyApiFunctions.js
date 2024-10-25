@@ -1,5 +1,4 @@
 import {api} from "./baseUrl";
-import {useAuth} from "../../components/auth/AuthContext";
 
 /* This function adds a new company to the database */
 export async function addCompany(id,companyName,companyPhoneNumber,companyAddress,isCompanyActive,headers) {

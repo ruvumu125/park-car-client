@@ -23,16 +23,16 @@ const Header = () =>{
                 <div className="header">
 
                     <div className="header-left active">
-                        <a href="index.html" className="logo logo-normal">
-                            <img src="/img/logo.png" alt/>
+                        <a href="#" className="logo logo-normal">
+                            <img src="/img/logo.png" alt=""/>
                         </a>
-                        <a href="index.html" className="logo logo-white">
-                            <img src="/img/logo-white.png" alt/>
+                        <a href="#" className="logo logo-white">
+                            <img src="/img/logo-white.png" alt=""/>
                         </a>
-                        <a href="index.html" className="logo-small">
-                            <img src="/img/logo-small.png" alt/>
+                        <a href="#" className="logo-small">
+                            <img src="/img/logo-small.png" alt=""/>
                         </a>
-                        <a id="toggle_btn">
+                        <a id="toggle_btn" href="#">
                             <i data-feather="chevrons-left" className="feather-16"></i>
                         </a>
                     </div>
@@ -61,10 +61,10 @@ const Header = () =>{
                         <li className="nav-item nav-item-box">
                         </li>
                         <li className="nav-item dropdown has-arrow main-drop">
-                            <a className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+                            <a className="dropdown-toggle nav-link userset" data-bs-toggle="dropdown" href="#">
                               <span className="user-info">
                               <span className="user-letter">
-                              <img src="/img/avatar3.png" alt className="img-fluid"/>
+                              <img src="/img/avatar3.png"  className="img-fluid" alt=""/>
                               </span>
                               <span className="user-detail">
                               <span className="user-name">{userFullName}</span>
@@ -75,7 +75,7 @@ const Header = () =>{
                             <div className="dropdown-menu menu-drop-user">
                                 <div className="profilename">
                                     <div className="profileset">
-                                       <span className="user-img"><img src="/img/avatar3.png" alt/>
+                                       <span className="user-img"><img src="/img/avatar3.png" alt=""/>
                                        <span className="status online"></span></span>
                                         <div className="profilesets">
                                             <h6>{userFullName}</h6>
@@ -87,7 +87,7 @@ const Header = () =>{
                                             Profile</a>
                                         <a className="dropdown-item" href="general-settings.html"><i className="me-2" data-feather="settings"></i>Settings</a>
                                         <hr className="m-0"/>
-                                        <a
+                                        <a href="#"
                                             onClick={logout}
                                             className="dropdown-item logout pb-0">
                                             <img src="/img/log-out.svg" className="me-2" alt="img"/>Déconnexion
@@ -98,11 +98,12 @@ const Header = () =>{
                         </li>
                     </ul>
                     <div className="dropdown mobile-user-menu">
-                        <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                        <a href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fa fa-ellipsis-v"></i></a>
                         <div className="dropdown-menu dropdown-menu-right">
                             <a className="dropdown-item" href="profile.html">My Profile</a>
-                            <a className="dropdown-item" href="general-settings.html">Settings</a>
+                            <a className="dropdown-item" href="">Settings</a>
                             <a
+                                href="#"
                                 onClick={logout}
                                 className="dropdown-item logout pb-0">
                                 <img src="/img/log-out.svg" className="me-2" alt="img"/>Déconnexion

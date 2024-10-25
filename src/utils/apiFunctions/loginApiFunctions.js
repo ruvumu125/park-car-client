@@ -1,5 +1,4 @@
 import {api} from "./baseUrl";
-import {useAuth} from "../../components/auth/AuthContext";
 
 /* This function adds a new vehicule type to the database */
 export async function loginUser(login) {

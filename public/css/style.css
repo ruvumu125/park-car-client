@@ -9953,7 +9953,11 @@ svg.collapse-open, svg.collapse-close {
   font-weight: 700;
   background-color: transparent;
   border-radius: 50px;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 4px;
 }
+
 .modal .close:hover,
 .modal .btn-close:hover {
   background-color: transparent;
@@ -24985,6 +24989,11 @@ table tbody td.action-table-data a.cancel-circle:hover svg {
   background-color: #FF0000;
   border-color: #FF0000;
 }
+.edit-delete-action a.confirm-text-updated:hover{
+
+  background-color: #FF0000;
+  border-color: #FF0000;
+}
 .edit-delete-action a.edit-icon:hover {
   background-color: #092C4C;
   border-color: #092C4C;
@@ -32522,6 +32531,66 @@ label span {
 
 .text-default {
   color: #5B6670;
+}
+.search-set h4 {
+    font-weight: 700;
+    color: #092C4C;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.yombi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  color: #FF4D4D;
+  opacity: 1;
+  font-size: 12px;
+  width: 22px;
+  height: 22px;
+  border: 0;
+  font-weight: 700;
+  background-color: transparent;
+  border-radius: 50px;
+}
+.yuyu{
+  padding: 24px 24px 0;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  margin-bottom: 25px;
+}
+
+.yuyu.left-div {
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+}
+.yuyu.right-div{
+  margin-left: auto;
+}
+
+.yuyu.right-div.h2 {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-right: 15px
+}
+@media (min-width: 575px)
+.rwisabi{
+  padding: 0px;
+}
+@media (max-width: 575px)
+.rwisabi{
+  padding: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

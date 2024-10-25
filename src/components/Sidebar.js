@@ -31,7 +31,7 @@ const Sidebar = () => {
                 });
             }
         });
-    }, [location, items]);
+    }, [location]);
 
     const toggle = (k, i) => {
         setSelected(k);

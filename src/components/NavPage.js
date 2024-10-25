@@ -8,7 +8,6 @@ import SuperAdmin from "../pages/SuperAdmin";
 import AdminMain from "../pages/AdminMain";
 import AdminSecondary from "../pages/AdminSecondary";
 import Agent from "../pages/Agent";
-import Login from "../pages/Login";
 import Vehicule from "../pages/Vehicule";
 import Collections from "../pages/Collections";
 import DashBoardSuperAdmin from "../pages/DashBoardSuperAdmin";
@@ -16,7 +15,6 @@ import DashBoardAdmin from "../pages/DashBoardAdmin";
 import ProtectedRoute from "./auth/ProtectedRoute";
 
 const NavPage = () => {
-    let DashboardSuperAdmin;
     return (
         <React.Fragment>
             <section>

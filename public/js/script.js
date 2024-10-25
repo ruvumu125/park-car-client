@@ -969,8 +969,8 @@ $(document).ready(function(){
 	$('body').append('<div class="sidebar-filter"></div>');
 		//theme Settings 
 		setTimeout(function () {
-			if($('.navigation-add').length > 0) {
-				$(".navigation-add").click(function(){
+			if($('.customizer-links').length > 0) {
+				$(".customizer-links").click(function(){
 					$(".sidebar-filter").addClass("opened");
 				  });
 		
@@ -990,7 +990,6 @@ $(document).ready(function(){
 				$(".sidebar-filter").click(function(){
 					$(".sidebar-filter").removeClass("opened");
 					$(".sidebar-settings").removeClass("show-settings");
-					document.body.style.overflow = 'auto';
 				});
 			}
 		}, 1000);
@@ -1193,14 +1192,12 @@ $('.navigation-add').on("click", function (e) {
 });
 $('.sidebar-close').on("click", function () {
 	$('.nav-toggle.sidebar-settings').removeClass('show-settings');
-	document.body.style.overflow = 'auto';
 });
 
 //theme Settings 
 setTimeout(function () {
 	$(".sidebar-close").click(function(e){
 		$(".sidebar-settings").removeClass("show-settings");
-		document.body.style.overflow = 'auto';
 	});
 }, 1000);
 
@@ -1500,7 +1497,7 @@ if($('.video-slide').length > 0) {
 		margin:24,
 		nav:true,
 		dots: false,
-		autoplay:false,
+		autoplay:true,
 		smartSpeed: 1000,
 		navText: ['<i class="fa fa-angle-left" data-bs-toggle="tooltip" title="fa fa-angle-left"></i>', '<i class="fa fa-angle-right" data-bs-toggle="tooltip" title="fa fa-angle-right"></i>'],
 		responsive:{
