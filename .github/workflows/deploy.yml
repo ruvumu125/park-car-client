@@ -22,7 +22,7 @@ name: Deploy to VPS
 	      - name: Deploy to VPS
 	        run: |
 	          ssh -o StrictHostKeyChecking=no deployer@${{ secrets.VPS_HOST }} << 'EOF'
-	            cd /path/to/your/app
+	            cd /var/www/my-apps/parika-app-client
 	            git pull origin master  # Adjust branch name if needed
 	            # Add commands to restart your application here
 	          EOF
